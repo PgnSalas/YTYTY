@@ -1,0 +1,43 @@
+
+@import 'base/fonts';
+@import 'base/zero';
+@import 'base/variables';
+
+@import 'blocks/btns';
+@import 'blocks/titles';
+
+
+// HEADER
+@import 'blocks/header';
+
+// HAMBURGER
+@import 'blocks/hamburger';
+
+// MENU
+@import 'blocks/menu';
+
+// TECHNOLOGY
+@import 'blocks/technology';
+
+body {
+    font-family: $font-Gilroy;
+    background: #F9F8FD;
+}
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1190px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+
+
+// MEDIA
+@import 'base/media';

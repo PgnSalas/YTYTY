@@ -1,0 +1,21 @@
+.hamburger {
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4%;
+    height: 14px;
+    width: 17px;
+    cursor: pointer;
+    // background-color: $color-orange;
+
+    span {
+        display: block;
+        background-color: $color-orange;
+        width: 17px;
+        height: 2px;
+        &:not(:last-child) {
+            margin: 0px 0px 4px 0px;
+        }
+    }
+}

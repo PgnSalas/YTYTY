@@ -1,0 +1,22 @@
+.title {
+    font-family: $font-Gilroy;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 100%;
+    text-align: center;
+    color: #22253B;
+}
+
+.block {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    // line-height: 46px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border-radius: 44px;
+}
