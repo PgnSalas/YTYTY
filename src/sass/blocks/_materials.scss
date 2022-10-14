@@ -1,0 +1,95 @@
+.main {
+    &__materials {
+        padding: 0px 0px 90px 0px;
+    }
+}
+.materials {
+    &__container {
+    }
+    &__wrapper {
+        position: relative;
+        z-index: 20;
+        background-color: #fff;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin: 0px 0px 26px 0px;
+        }
+    }
+    &__item {
+        padding: 56px 66px 50px 53px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+    &__num {
+        font-weight: 700;
+        font-size: 77px;
+        // line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #38BFF2;
+        &:not(:last-child) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    &__line {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1px;
+        height: 259px;
+        left: 505px;
+        top: 2753px;
+        margin: auto 0px auto 0px;
+        background: #EAF2F5;
+    }
+    &__title {
+        max-width: 266px;
+        font-weight: 600;
+        font-size: 24px;
+        // line-height: 125%;
+        color: #22253B;
+        &:not(:last-child) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    &__text {
+        max-width: 288px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 144%;
+        color: #22253B;
+    }
+    &__block {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        max-width: 538px;
+        background-color: #fff;
+        border-radius: 110px;
+        min-height: 93px;
+        padding: 0px 37px 0px 14px;
+        &_text {
+            max-width: 214px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 120%;
+            color: #22253B;
+        }
+    }
+    &__btn {
+        margin: 0px 24px 0px 0px;
+        padding: 0px 50px 0px 24px;
+        max-height: 70px;
+        max-width: 249px;
+        img {
+            position: relative;
+            padding: 0px 0px 0px 14px;
+        }
+    }
+}
+.btn {
+}

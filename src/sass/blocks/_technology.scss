@@ -1,23 +1,19 @@
 .main {
     &__technology {
         position: relative;
-        z-index: 10;
+        z-index: 25;
         background-color: #fff;
         padding: 103px 0px 42px 0px;
-        &::before {
+        &::after {
             content: '';
             display: block;
-            width: 100px;
-            height: 100px;
+            border: 40px;
+            border-color: #fff transparent transparent transparent transparent;
             position: absolute;
-            // z-index: 5;
             top: -50px;
             left: 50%;
             transform: translateX(-50%);
-            border-radius: 50%;
-            background-color: #000;
-            opacity: 0.4;
-            // overflow: hidden;
+            // border-radius: 50%;
         }
     }
 }
@@ -50,6 +46,10 @@
         grid-template-columns: 151px 151px auto auto;
         grid-template-rows: 45px 45px 45px;
         margin: 0px 0px 25px 0px;
+    }
+    .block {
+        transition: all 0.3s;
+        cursor: pointer;
     }
     &__block_1 {
         // width: 311px;

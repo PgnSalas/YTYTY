@@ -14,4 +14,16 @@
     letter-spacing: -0.03em;
     color: #FFFFFF;
     cursor: pointer;
+    box-shadow: 0 5px 0 #922301;
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+    &:hover {
+        // transform: scale(1.05px);
+        background-color: rgb(197, 72, 0);
+    }
+    &:active {
+        top: 3px;
+        box-shadow: 0 2px 0 #922301;
+    }
 }
