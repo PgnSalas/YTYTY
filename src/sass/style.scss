@@ -28,6 +28,20 @@
 // MATERIALS
 @import 'blocks/materials';
 
+// HELP
+@import 'blocks/help';
+
+// TEST
+@import 'blocks/test';
+
+// COST
+@import 'blocks/cost';
+
+// FOOTER
+@import 'blocks/footer';
+
+
+
 body {
     font-family: $font-Gilroy;
     background: #F9F8FD;

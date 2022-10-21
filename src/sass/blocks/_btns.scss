@@ -20,10 +20,14 @@
     top: 0;
     &:hover {
         // transform: scale(1.05px);
-        background-color: rgb(197, 72, 0);
+        // background-color: rgb(197, 72, 0);
+        background-color: $color-blue;
+        box-shadow: 0 5px 0 #0c6c8f;
+        // box-shadow: 0 2px 0 #0c6c8f;
     }
     &:active {
         top: 3px;
-        box-shadow: 0 2px 0 #922301;
+        // box-shadow: 0 2px 0 #922301;
+        box-shadow: 0 2px 0 #0c6c8f;
     }
 }

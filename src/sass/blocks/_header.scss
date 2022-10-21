@@ -82,12 +82,13 @@
         }
         &::before {
             content: '';
+            cursor: pointer;
             position: absolute;
             left: 14px;
             top: 50%;
             transform: translateY(-50%);
             display: block;
-            background: url('/icons/header/rightArrow.png') center center/cover no-repeat;
+            background: url('../icons/header/newarrowright.svg') center center/cover no-repeat;
             width: 10px;
             height: 10px;
         }
@@ -182,6 +183,7 @@
         // top: 123px;
     }
     &__circkle {
+        display: block;
         width: 37px;
         height: 37px;
         background-color: #fff;
@@ -191,19 +193,30 @@
         bottom: 15px;
         margin: 90px auto 0 auto;
         cursor: pointer;
-        &::after {
-            content: '';
+        img {
             z-index: 20;
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: block;
-            width: 16px;
-            height: 16px;
-            color: #fff;
-            background: url('../icons/header/downarrow (2).png') center center/cover no-repeat;
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                width: 16px;
+                height: 16px;
+                color: #fff;
         }
+        // &::after {
+        //     content: '';
+        //     z-index: 20;
+        //     position: absolute;
+        //     top: 10px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     display: block;
+        //     width: 16px;
+        //     height: 16px;
+        //     color: #fff;
+        //     background: url('../icons/header/downarrow (2).png') center center/cover no-repeat;
+        // }
     }
 }
 .btn {

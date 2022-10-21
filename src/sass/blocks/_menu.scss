@@ -63,6 +63,7 @@
         }
     }
     &__btn {
+        // position: relative;
         position: absolute;
         bottom: 34px;
         left: 31px;
@@ -75,6 +76,7 @@
         justify-content: center;
         cursor: pointer;
         & a {
+            // position: relative;
             font-weight: 500;
             font-size: 15px;
             line-height: 104.4%;
@@ -84,14 +86,16 @@
         }
         &::before {
             content: '';
+            cursor: pointer;
             position: absolute;
             left: 30px;
             top: 50%;
             transform: translateY(-50%);
             display: block;
-            background: url('/icons/header/rightArrow.png') center center/cover no-repeat;
+            background: url('../icons/header/newarrowright.svg') center center/cover no-repeat;
             width: 14px;
             height: 14px;
+            // background-color: re;
         }
     }
     &__overlay {
