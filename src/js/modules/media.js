@@ -7,7 +7,10 @@ const media = (selectorItem) => {
     costBottom = document.querySelector('.cost__block-bottom'),
     mod = document.querySelectorAll('.cost__mod'),
     jsBtnBlock = document.querySelectorAll('.cost__js_btn-block'),
-    svg = document.querySelectorAll('.cost__js_btn-block svg');
+    svg = document.querySelectorAll('.cost__js_btn-block svg'),
+    total = document.querySelector('.cost__total'),
+    modTotal = document.querySelector('.mod__total'),
+    svgTotal = document.querySelector('.cost__total svg');
     
     let arr = [];
     let icoArr = [];
@@ -15,6 +18,8 @@ const media = (selectorItem) => {
     mod.forEach((block, i) => {
         block.style.display = 'none';
     });
+
+    modTotal.style.display = 'none';
     
 
     if (document.documentElement.clientWidth < 811) {
@@ -102,6 +107,34 @@ const media = (selectorItem) => {
                 });
             });
         }
+
+
+        function totalCreateBtn(tot, mod, svg, parent) {
+            let btnTotal = document.createElement('div');
+            btnTotal.classList.add('cost__js_btn');
+            btnTotal.textContent = 'Итого';
+
+            tot.append(btnTotal);
+
+            tot.addEventListener('click', (e) => {
+                if (e.target && e.target.classList.contains('svgTotal') || e.target && e.target.classList.contains('cost__js_btn')) {
+                    if (mod.style.display == 'none') {
+                        mod.style.display = 'block';
+                        btnTotal.style.cssText = 'border: 2px solid #38BFF2; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom: 0px; background: #fff;';
+                        svg.classList.add('svgTot');
+                        svg.style.cssText = 'transform: rotate(-180deg); top: 30%;';
+                    } else {
+                        mod.style.display = 'none';
+                        svg.classList.remove('svgTot');
+                        svg.style.cssText = 'transform: rotate(90deg + 90deg); top: 50%;';
+                        btnTotal.style.cssText = 'border: 2px solid #F15525; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border-top-left-radius: 20px; border-top-right-radius: 20px; background: #fff;';
+                    }
+                }
+            });
+        }
+
+        totalCreateBtn(total, modTotal, svgTotal, jsBtnBlock);
+
     } 
 
     if (document.documentElement.clientWidth < 426) {

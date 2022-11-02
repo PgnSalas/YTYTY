@@ -216,15 +216,54 @@
     }
 }
 
-// .cost__icon {
-//     position: absolute;
-//     z-index: 103;
-//     background: url('../icons/header/arrowDown.svg') center center/cover no-repeat;
-//     width: 15px;
-//     height: 15px;
-//     right: 10px;
-//     cursor: pointer;
-// }
+.cost__total_btn {
+    margin: 0px 10px 0px 0px;
+    justify-self: end;
+    min-height: 40px;
+    padding: 0px 30px 0px 20px;
+    border: 2px solid $color-orange;
+    border-radius: 82px;
+    font-family: $font-Gilroy;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 96.69%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #22253b;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    // overflow: hidden;
+    z-index: 100;
+    // &:after {
+    //     content: '';
+    //     // position: absolute;
+    //     // background: url('../icons/header/arrowDown.svg') center center/cover no-repeat;
+    //     // transform: rotate(-180deg);
+    //     // // background-color: $color-orange;
+    //     // top: 50%;
+    //     // transform: translateY(-50%);
+    //     // right: 10px;
+    //     // width: 15px;
+    //     // height: 15px;
+    // }
+    &:hover {
+        // transform: scale(1.05px);
+        // background-color: rgb(197, 72, 0);
+        // background-color: $color-blue;
+        box-shadow: 0 2px 0 #F15525;
+        // box-shadow: 0 2px 0 #0c6c8f;
+    }
+    &:active {
+        top: 3px;
+        // box-shadow: 0 2px 0 #922301;
+        box-shadow: 0 2px 0 #F15525;
+    }
+}
+
 .mod__btn {
     position: absolute;
     left: -100%;
@@ -273,6 +312,34 @@ svg {
     }
 }
 
+.mod__total {
+    display: none;
+    // border-top-right-radius: 0px;
+    // border-top-left-radius: 0px;
+    // border-bottom-left-radius: 20px;
+    // border-bottom-right-radius: 20px;
+    // border: 2px solid $color-orange;
+    border-top: none;
+    background-color:#fff;
+    position: absolute;
+    // z-index: 2;
+    // opacity: 0;
+    // top: 0px;
+    right: 10px;
+    width: 259px;
+    min-height: 60px;
+
+    opacity: 1;
+    top: 48px;
+    z-index: 120;
+    border: 2px solid #38BFF2;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 0px;
+}
+
 .cost__mod_active {
     opacity: 1;
     top: 48px;
@@ -308,4 +375,10 @@ svg {
     & path {
         fill: #38BFF2; 
     }    
+}
+.svgTot {
+    z-index: 120;
+    & path {
+        fill: #38BFF2;
+    }
 }

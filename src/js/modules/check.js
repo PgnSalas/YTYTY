@@ -1,42 +1,55 @@
-const check = (selectorCheck, bgCheck, classActive, selectorParent) => {
+
+
+const check = (selectorCheck, bgCheck, classActive, selectorParent, rightNumber) => {
     const checkLine = document.querySelectorAll(selectorCheck),
-          bg = document.querySelectorAll(bgCheck);
+          bg = document.querySelectorAll(bgCheck),
+          parent = document.querySelector(selectorParent),
+          right = document.querySelector(rightNumber),
+          exer = document.querySelector('.exer'),
+          exerStyle = window.getComputedStyle(exer),
+          check = document.querySelectorAll('.checkbox');
 
-    let number = 0;
 
-    // function checkInp(line, bg, num) {
-        checkLine.forEach((item, i) => {
-            item.addEventListener('click', (e) => {
-                bg.forEach((bag, j) => {
-                    if (number == 0) {
-                        if (i == j) {
-                            bag.classList.add(classActive);
-                            number += 1;
-                            // closeCheck(bg, number, checkLine);
-                            console.log(number);
+        //   console.log(exerStyle);
+
+    let corrent = 0;
+    let score = 0;
+
+    const quizData = [
+        {
+            correct: 'a',
+        },
+        {
+            correct: 'b',
+        },
+        {
+            correct: 'c',
+        }
+    ];
+
+    checkLine.forEach((item, i) => {
+        item.addEventListener('click', (e) => {
+                bg.forEach((bg, j) => {
+                    bg.classList.remove(classActive);
+                    if (i == j) {
+                        if (bg.classList.contains(classActive)) {
+                            bg.classList.remove(classActive);
+                        } else {
+                            bg.classList.add(classActive);
+                            // if (bg.id === 'a') {
+                            //     score++;
+                            // } else {
+                            //     score = score;
+                            // }
+                            // console.log(score);
+                            // console.log(right);
+                            // right.textContent = score;
                         }
-                    } 
-                });
-            });
+                    }
+                });   
         });
-    // }
+    });
 
-    // checkInp(checkLine, bg, number);
-
-    // function closeCheck(bg, num, per, ) {
-        checkLine.forEach((line, i) => {
-            line.addEventListener('click', (e) => {
-                if (e.target && e.target.classList.contains(classActive)) {
-                    bg.forEach((bag, j) => {
-                        if (i == j) {
-                            bag.classList.remove(classActive);
-                            number -= 1;
-                        }
-                    });
-                }
-            });
-        });
-    // }
 };
 
 

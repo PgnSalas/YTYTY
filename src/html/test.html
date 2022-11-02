@@ -18,6 +18,7 @@
     </div>
 </div>
 
+
 <div class="exer test" data-modal>
     <div class="exer__body test__body">
         <div class="exer__content content__exer">
@@ -29,18 +30,21 @@
             </div>
             <div class="content__exer_wrapper">
                 <div class="content__exer_points">
-                    <div class="content__exer_point">
+                    <label class="content__exer_point">
+                        <input class="checkbox" type="checkbox" name="checkbox-test">
                         Да, сумма явно неверная
-                        <div class="content__check"></div>
-                    </div>
-                    <div class="content__exer_point">
+                        <div class="content__check" id="a"></div>
+                    </label>
+                    <label class="content__exer_point">
+                        <input class="checkbox" type="checkbox" name="checkbox-test">
                         Нет, такая сумма вполне могла получиться
-                        <div class="content__check"></div>
-                    </div>
-                    <div class="content__exer_point">
+                        <div class="content__check" id="b"></div>
+                    </label>
+                    <label class="content__exer_point">
+                        <input class="checkbox" type="checkbox" name="checkbox-test">
                         Не знаю, не получается решить
-                        <div class="content__check"></div>
-                    </div>
+                        <div class="content__check" id="c"></div>
+                    </label>
                 </div>
                 <div class="content__exer_button">
                     <div class="content__exer_btn btn">
@@ -55,7 +59,93 @@
     </div>
 </div>
 
-<div class="right test" data-modal> 
+
+<div class="exer-2 exer test" data-modal>
+    <div class="exer__body-2 exer__body test__body">
+        <div class="exer__content-2 content__exer">
+            <div class="content__exer_ex">
+                ЗАДАНИЕ №2
+            </div>
+            <div class="content__exer_text content__test_test">
+                Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+            </div>
+            <div class="content__exer_wrapper">
+                <div class="content__exer_points content__exer_points-2">
+                    <div class="content__exer_point content__exer_point-2">
+                        <div class="point">
+                            Да, сумма явно неверная
+                        </div>
+                        <div class="content__check content__check-2" id="a"></div>
+                    </div>
+                    <div class="content__exer_point content__exer_point-2">
+                        <div class="point">
+                            Нет, такая сумма вполне могла получиться
+                        </div>
+                        <div class="content__check content__check-2" id="b"></div>
+                    </div>
+                    <div class="content__exer_point content__exer_point-2">
+                        <div class="point">
+                            Не знаю, не получается решить
+                        </div>
+                        <div class="content__check content__check-2" id="c"></div>
+                    </div>
+                </div>
+                <div class="content__exer_button">
+                    <div class="content__exer_btn-2 content__exer_btn btn">
+                        Ответить
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exer__close-2 exer__close">
+            <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#BCBCBC" d="M0 13.633L13.633 0l.974.974L.974 14.607z"/><path fill="#BCBCBC" d="M13.633 14.606L0 .973.974 0l13.633 13.633z"/></svg>
+        </div>
+    </div>
+</div>
+
+
+<div class="exer-3 exer test" data-modal>
+    <div class="exer__body-3 exer__body test__body">
+        <div class="exer__content-3 content__exer">
+            <div class="content__exer_ex">
+                ЗАДАНИЕ №3
+            </div>
+            <div class="content__exer_text content__test_test">
+                Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+            </div>
+            <div class="content__exer_wrapper">
+                <div class="content__exer_points content__exer_points-3">
+                    <div class="content__exer_point content__exer_point-3">
+                        <div class="point">
+                            Да, сумма явно неверная
+                        </div>
+                        <div class="content__check content__check-3" id="a"></div>
+                    </div>
+                    <div class="content__exer_point content__exer_point-3">
+                        Нет, такая сумма вполне могла получиться
+                        <div class="content__check content__check-3" id="b"></div>
+                    </div>
+                    <div class="content__exer_point content__exer_point-3">
+                        Не знаю, не получается решить
+                        <div class="content__check content__check-3" id="c"></div>
+                    </div>
+                </div>
+                <div class="content__exer_button">
+                    <div class="content__exer_btn-3 content__exer_btn btn3 btn">
+                        Ответить
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exer__close-3 exer__close">
+            <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#BCBCBC" d="M0 13.633L13.633 0l.974.974L.974 14.607z"/><path fill="#BCBCBC" d="M13.633 14.606L0 .973.974 0l13.633 13.633z"/></svg>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="right test" data-modal> 
     <div class="right__body test__body">
         <div class="right__content content__right">
             <div class="content__right_ex content__exer_ex">
@@ -81,30 +171,88 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="answer test" data-modal>
-    <div class="answer__body test__body">
-        <div class="answer__content content__answer">
-            <div class="content__answer_ex">
-                Набрано <span>4</span>/4
+
+<!-- <div class="right-2 test" data-modal> 
+    <div class="right__body test__body">
+        <div class="right__content content__right">
+            <div class="content__right_ex content__exer_ex">
+                ЗАДАНИЕ №2
             </div>
-            <div class="content__answer_text ">
-                Это великолепный результат! У вас есть все шансы стать отличным программистом. Начните обучение прямо сейчас, доступ ко вводным урокам уже открыт
+            <div class="content__right_title content__test_title">
+                Правильно! С логикой у вас все отлично
             </div>
-            <div class="content__answer_btn-block">
-                <div class="content__answer_btn btn">
-                    Начать учиться бесплатно
+            <div class="content__right_text content__test_test">
+                Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана Ивановича.
+                <br> <br>
+                <span>В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</span>
+            </div>
+
+            <div class="content__right_btn-block">
+                <div class="content__right_btn-2 content__right_btn btn">
+                    Далее
                 </div>
             </div>
-            <div class="answer__close">
+
+            <div class="right__close-2 right__close">
                 <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#BCBCBC" d="M0 13.633L13.633 0l.974.974L.974 14.607z"/><path fill="#BCBCBC" d="M13.633 14.606L0 .973.974 0l13.633 13.633z"/></svg>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="fail test" data-modal>
+
+<!-- <div class="right-3 test" data-modal> 
+    <div class="right__body test__body">
+        <div class="right__content content__right">
+            <div class="content__right_ex content__exer_ex">
+                ЗАДАНИЕ №3
+            </div>
+            <div class="content__right_title content__test_title">
+                Правильно! С логикой у вас все отлично
+            </div>
+            <div class="content__right_text content__test_test">
+                Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана Ивановича.
+                <br> <br>
+                <span>В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</span>
+            </div>
+
+            <div class="content__right_btn-block">
+                <div class="content__right_btn-3 content__right_btn btn">
+                    Далее
+                </div>
+            </div>
+
+            <div class="right__close-3 right__close">
+                <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#BCBCBC" d="M0 13.633L13.633 0l.974.974L.974 14.607z"/><path fill="#BCBCBC" d="M13.633 14.606L0 .973.974 0l13.633 13.633z"/></svg>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    <div class="answerTest test" data-modal>
+        <div class="answer__body test__body">
+            <div class="answer__content content__answer">
+                <div class="content__answer_ex">
+                    Набрано <span class="rightNumbers"></span>/3
+                </div>
+                <div class="content__answer_text ">
+                    Это великолепный результат! У вас есть все шансы стать отличным программистом. Начните обучение прямо сейчас, доступ ко вводным урокам уже открыт
+                </div>
+                <div class="content__answer_btn-block">
+                    <div id="submit" class="content__answer_btn btn">
+                        Начать учиться бесплатно
+                    </div>
+                </div>
+                <div class="answer__close">
+                    <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#BCBCBC" d="M0 13.633L13.633 0l.974.974L.974 14.607z"/><path fill="#BCBCBC" d="M13.633 14.606L0 .973.974 0l13.633 13.633z"/></svg>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+<!-- <div class="fail test" data-modal>
     <div class="fail__body test__body">
         <div class="fail__content content__fail">
             <div class="content__fail_title">
@@ -123,7 +271,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- <div class="mod test">
     <div class="mod__body test__body">
